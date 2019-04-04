@@ -1,11 +1,14 @@
 import React, { Component } from 'react'
 import './App.css'
-import Counter from './examples/useState/Counter'
+//import Counter from './examples/useEffect/counterWithDocumentTitleUpdate/CounterWithDocumentTitleUpdate'
+import ChatRecipientPicker from './examples/customHooks/ChatRecipientPicker'
+//import CounterWithReducer from './examples/useReducer/CounterWithReducer'
+//import TextInputWithFocusButton from './examples/useRef/TextInputWithFocusButton'
 
 class App extends Component {
   render () {
     return (
-      <Counter />
+      <ChatRecipientPicker />
     )
   }
 }

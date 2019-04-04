@@ -18,5 +18,25 @@ function CounterWithDocumentTitleUpdate () {
     </div>
   )
 }
-
+// example of subscription
 export default CounterWithDocumentTitleUpdate
+
+
+// function FriendStatusWithCounter(props) {
+//   const [count, setCount] = useState(0);
+//   useEffect(() => {
+//     document.title = `You clicked ${count} times`;
+//   });
+
+//   const [isOnline, setIsOnline] = useState(null);
+//   useEffect(() => {
+//     function handleStatusChange(status) {
+//       setIsOnline(status.isOnline);
+//     }
+
+//     ChatAPI.subscribeToFriendStatus(props.friend.id, handleStatusChange);
+//     return () => {
+//       ChatAPI.unsubscribeFromFriendStatus(props.friend.id, handleStatusChange);
+//     };
+//   }, [props.friend.id]); // second argument to avoid rerenders in case of no value change.
+// }
